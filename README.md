@@ -12,7 +12,7 @@
   <li>Create HTML files(home.html, about.html) to create how the web page looks and use the render_template function to render those HTML files.</li>
 </ul>
 </h5>
-<h4>Sample Screenshots of how my application looks:</h4>
+<h4>Screenshots of how my application looks:</h4>
 <img src="https://github.com/sri-chi/FETP-Srikanth/assets/35699881/6d7988c4-2c49-4929-b800-8d570680c77b" width="300">..<image src="https://github.com/sri-chi/FETP-Srikanth/assets/35699881/39b75fc3-7737-4f49-8807-3b4674b32b93" width="300">..<img src="https://github.com/sri-chi/FETP-Srikanth/assets/35699881/fe328154-8ecb-4c11-bf83-7eae70ee4411" width="300">..<img src="https://github.com/sri-chi/FETP-Srikanth/assets/35699881/c8ee5864-c4ef-4b11-bc9c-655725aa69ec" width="300">
 
 >
