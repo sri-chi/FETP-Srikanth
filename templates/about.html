@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+  <style>
+    body {
+      background-color: rgb(24, 130, 154);
+      color: white;
+      
+    }
+    
+    
+    
+    p {
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    div {
+      background-color: white;
+      
+      margin: 0 auto;
+      margin-top: 20px;
+      padding: 25px;
+     
+      border-radius: 8px
+      
+      
+      /*font-weight: 400;*/
+    }
+    
+    h1 {
+      font-size: 16px;
+      margin: 5px;
+      text-align: justify;
+      text-decoration: underline;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+  </style>
+</head>
+
+<body>
+  
+  
+  <div style="border: 2px solid grey;  width: 600px;" >
+    <p style="font-size: 11px;">{{ct}}</p>
+    <img src="{{pic}}" alt="Google profile picture" style="border-radius: 50%">
+    <p></p>
+    <p style="margin:0 auto; font-size: 20px">Hello {{name}} <a class="text" href="/logout">[Sign out]</a></p>
+    <p style="margin:0 auto; font-size: 20px">You are signed in with the email {{emailid}}</p>
+  </div>
+
+  <div style="background-color:rgb(24, 130, 154); width: auto; border: 1px solid orange;">
+  <h1 style="color: orange;">Number of Lines</h1>
+    <!-- create a form with the input box and the submit button -->
+  <form action="/generate" method="get">
+    <input type="number" name="numb"  max="100" placeholder="Enter number ......" size="placeholder" style="background-color: rgb(211, 200, 179);border-radius: 8px;padding: 5px; border:1px solid whitesmoke; color: solid black; font-size: 16px;" >
+    <input type="submit" value="Display" style="background-color: orange; border: 1px solid whitesmoke; border-radius: 8px; color: white; margin: 4px; padding: 5px; font-size: 16px; ">
+  </form>
+  
+    <p style="color: white; text-align: center; text-decoration: underline;">Generated Pattern for {{lines}} Lines :</p>
+    <div style="background-color: rgb(24, 130, 154); border: 0px; width: min-content;">
+    <pre style="font-size:small;">
+    {% for line in pattern %}
+    {{ line }}
+    {% endfor %}
+    </pre>
+    </div>
+  </div>
+</body>
